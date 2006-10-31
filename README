@@ -5,29 +5,30 @@ closely follows GTK+ development. Highlights include typesafe callbacks,
 widgets extensible via inheritance and a comprehensive set of widgets.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  atk-1.10.3-1
-  glib2-2.8.6-1
-  glibmm24-2.10.3-1
-  gtk2-x11-2.8.17-1
+  cygwin-1.5.21-2
+  atk-1.12.3-1
+  cairomm10-1.2.2-1
+  glib2-2.12.4-1
+  glibmm24-2.12.2-1
+  gtk2-x11-2.10.6-1
   libsigc++20-2.0.17-1
-  pango-1.10.4-1
+  pango-1.14.7-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.21-2
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.1.93-1
+  binutils-20060817-1
+  cygport-0.2.6-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
   gcc-g++-3.4.4-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
   perl-5.8.7-5
   pkg-config-0.20-1
-  sed-4.1.4-1
+  sed-4.1.5-1
 
 Canonical homepage:
   http://www.gtkmm.org/
@@ -38,37 +39,37 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtkmm24-2.8.8-X-src.tar.bz2
+  unpack gtkmm24-2.10.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtkmm24-2.8.8-X.cygport all
+  cygport ./gtkmm24-2.10.2-X.cygport all
 
 This will create:
-  /usr/src/gtkmm24-2.8.8-X-src.tar.bz2
-  /usr/src/gtkmm24-2.8.8-X.tar.bz2
-  /usr/src/gtkmm24-devel-2.8.8-X.tar.bz2
-  /usr/src/gtkmm24-doc-2.8.8-X.tar.bz2
+  /usr/src/gtkmm24-2.10.2-X-src.tar.bz2
+  /usr/src/gtkmm24-2.10.2-X.tar.bz2
+  /usr/src/gtkmm24-devel-2.10.2-X.tar.bz2
+  /usr/src/gtkmm24-doc-2.10.2-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the runtime package:
+Files included in the binary packages:
 
+(gtkmm24)
   /usr/bin/cygatkmm-1.6-1.dll
   /usr/bin/cyggdkmm-2.4-1.dll
   /usr/bin/cyggtkmm-2.4-1.dll
   /usr/bin/cygpangomm-1.4-1.dll
-  /usr/share/doc/Cygwin/gtkmm24-2.8.8.README
-  /usr/share/doc/gtkmm24-2.8.8/AUTHORS
-  /usr/share/doc/gtkmm24-2.8.8/COPYING
-  /usr/share/doc/gtkmm24-2.8.8/ChangeLog
-  /usr/share/doc/gtkmm24-2.8.8/Changes
-  /usr/share/doc/gtkmm24-2.8.8/INSTALL
-  /usr/share/doc/gtkmm24-2.8.8/NEWS
-  /usr/share/doc/gtkmm24-2.8.8/README
+  /usr/share/doc/Cygwin/gtkmm24-2.10.2.README
+  /usr/share/doc/gtkmm24-2.10.2/AUTHORS
+  /usr/share/doc/gtkmm24-2.10.2/COPYING
+  /usr/share/doc/gtkmm24-2.10.2/ChangeLog
+  /usr/share/doc/gtkmm24-2.10.2/Changes
+  /usr/share/doc/gtkmm24-2.10.2/INSTALL
+  /usr/share/doc/gtkmm24-2.10.2/NEWS
+  /usr/share/doc/gtkmm24-2.10.2/README
 
-Files included in the devel package:
-
+(gtkmm24-devel)
   /usr/include/atkmm-1.6/atkmm.h
   /usr/include/atkmm-1.6/atkmm/action.h
   /usr/include/atkmm-1.6/atkmm/component.h
@@ -177,6 +178,7 @@ Files included in the devel package:
   /usr/include/gtkmm-2.4/gtkmm/alignment.h
   /usr/include/gtkmm-2.4/gtkmm/arrow.h
   /usr/include/gtkmm-2.4/gtkmm/aspectframe.h
+  /usr/include/gtkmm-2.4/gtkmm/assistant.h
   /usr/include/gtkmm-2.4/gtkmm/base.h
   /usr/include/gtkmm-2.4/gtkmm/bin.h
   /usr/include/gtkmm-2.4/gtkmm/box.h
@@ -187,9 +189,11 @@ Files included in the devel package:
   /usr/include/gtkmm-2.4/gtkmm/celllayout.h
   /usr/include/gtkmm-2.4/gtkmm/cellrenderer.h
   /usr/include/gtkmm-2.4/gtkmm/cellrenderer_generation.h
+  /usr/include/gtkmm-2.4/gtkmm/cellrendereraccel.h
   /usr/include/gtkmm-2.4/gtkmm/cellrenderercombo.h
   /usr/include/gtkmm-2.4/gtkmm/cellrendererpixbuf.h
   /usr/include/gtkmm-2.4/gtkmm/cellrendererprogress.h
+  /usr/include/gtkmm-2.4/gtkmm/cellrendererspin.h
   /usr/include/gtkmm-2.4/gtkmm/cellrenderertext.h
   /usr/include/gtkmm-2.4/gtkmm/cellrenderertoggle.h
   /usr/include/gtkmm-2.4/gtkmm/cellview.h
@@ -237,7 +241,9 @@ Files included in the devel package:
   /usr/include/gtkmm-2.4/gtkmm/item.h
   /usr/include/gtkmm-2.4/gtkmm/label.h
   /usr/include/gtkmm-2.4/gtkmm/layout.h
+  /usr/include/gtkmm-2.4/gtkmm/linkbutton.h
   /usr/include/gtkmm-2.4/gtkmm/liststore.h
+  /usr/include/gtkmm-2.4/gtkmm/listviewtext.h
   /usr/include/gtkmm-2.4/gtkmm/main.h
   /usr/include/gtkmm-2.4/gtkmm/menu.h
   /usr/include/gtkmm-2.4/gtkmm/menu_elems.h
@@ -250,8 +256,18 @@ Files included in the devel package:
   /usr/include/gtkmm-2.4/gtkmm/notebook.h
   /usr/include/gtkmm-2.4/gtkmm/object.h
   /usr/include/gtkmm-2.4/gtkmm/optionmenu.h
+  /usr/include/gtkmm-2.4/gtkmm/pagesetup.h
+  /usr/include/gtkmm-2.4/gtkmm/pagesetupunixdialog.h
   /usr/include/gtkmm-2.4/gtkmm/paned.h
+  /usr/include/gtkmm-2.4/gtkmm/papersize.h
   /usr/include/gtkmm-2.4/gtkmm/plug.h
+  /usr/include/gtkmm-2.4/gtkmm/printcontext.h
+  /usr/include/gtkmm-2.4/gtkmm/printer.h
+  /usr/include/gtkmm-2.4/gtkmm/printjob.h
+  /usr/include/gtkmm-2.4/gtkmm/printoperation.h
+  /usr/include/gtkmm-2.4/gtkmm/printoperationpreview.h
+  /usr/include/gtkmm-2.4/gtkmm/printsettings.h
+  /usr/include/gtkmm-2.4/gtkmm/printunixdialog.h
   /usr/include/gtkmm-2.4/gtkmm/private/aboutdialog_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/accelgroup_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/accellabel_p.h
@@ -261,6 +277,7 @@ Files included in the devel package:
   /usr/include/gtkmm-2.4/gtkmm/private/alignment_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/arrow_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/aspectframe_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/assistant_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/bin_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/box_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/button_p.h
@@ -269,9 +286,11 @@ Files included in the devel package:
   /usr/include/gtkmm-2.4/gtkmm/private/celleditable_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/celllayout_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/cellrenderer_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/cellrendereraccel_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/cellrenderercombo_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/cellrendererpixbuf_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/cellrendererprogress_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/cellrendererspin_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/cellrenderertext_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/cellrenderertoggle_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/cellview_p.h
@@ -317,6 +336,7 @@ Files included in the devel package:
   /usr/include/gtkmm-2.4/gtkmm/private/item_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/label_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/layout_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/linkbutton_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/liststore_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/main_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/menu_p.h
@@ -329,8 +349,18 @@ Files included in the devel package:
   /usr/include/gtkmm-2.4/gtkmm/private/notebook_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/object_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/optionmenu_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/pagesetup_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/pagesetupunixdialog_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/paned_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/papersize_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/plug_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/printcontext_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/printer_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/printjob_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/printoperation_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/printoperationpreview_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/printsettings_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/printunixdialog_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/progressbar_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/radioaction_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/radiobutton_p.h
@@ -338,6 +368,13 @@ Files included in the devel package:
   /usr/include/gtkmm-2.4/gtkmm/private/radiotoolbutton_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/range_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/rc_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/recentchooser_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/recentchooserdialog_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/recentchoosermenu_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/recentchooserwidget_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/recentfilter_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/recentinfo_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/recentmanager_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/ruler_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/scale_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/scrollbar_p.h
@@ -351,6 +388,7 @@ Files included in the devel package:
   /usr/include/gtkmm-2.4/gtkmm/private/socket_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/spinbutton_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/statusbar_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/statusicon_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/stockitem_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/style_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/table_p.h
@@ -396,6 +434,13 @@ Files included in the devel package:
   /usr/include/gtkmm-2.4/gtkmm/radiotoolbutton.h
   /usr/include/gtkmm-2.4/gtkmm/range.h
   /usr/include/gtkmm-2.4/gtkmm/rc.h
+  /usr/include/gtkmm-2.4/gtkmm/recentchooser.h
+  /usr/include/gtkmm-2.4/gtkmm/recentchooserdialog.h
+  /usr/include/gtkmm-2.4/gtkmm/recentchoosermenu.h
+  /usr/include/gtkmm-2.4/gtkmm/recentchooserwidget.h
+  /usr/include/gtkmm-2.4/gtkmm/recentfilter.h
+  /usr/include/gtkmm-2.4/gtkmm/recentinfo.h
+  /usr/include/gtkmm-2.4/gtkmm/recentmanager.h
   /usr/include/gtkmm-2.4/gtkmm/ruler.h
   /usr/include/gtkmm-2.4/gtkmm/scale.h
   /usr/include/gtkmm-2.4/gtkmm/scrollbar.h
@@ -410,6 +455,7 @@ Files included in the devel package:
   /usr/include/gtkmm-2.4/gtkmm/socket.h
   /usr/include/gtkmm-2.4/gtkmm/spinbutton.h
   /usr/include/gtkmm-2.4/gtkmm/statusbar.h
+  /usr/include/gtkmm-2.4/gtkmm/statusicon.h
   /usr/include/gtkmm-2.4/gtkmm/stock.h
   /usr/include/gtkmm-2.4/gtkmm/stockid.h
   /usr/include/gtkmm-2.4/gtkmm/stockitem.h
@@ -457,6 +503,7 @@ Files included in the devel package:
   /usr/include/pangomm-1.4/pangomm/attributes.h
   /usr/include/pangomm-1.4/pangomm/attriter.h
   /usr/include/pangomm-1.4/pangomm/attrlist.h
+  /usr/include/pangomm-1.4/pangomm/cairofontmap.h
   /usr/include/pangomm-1.4/pangomm/color.h
   /usr/include/pangomm-1.4/pangomm/context.h
   /usr/include/pangomm-1.4/pangomm/coverage.h
@@ -479,6 +526,7 @@ Files included in the devel package:
   /usr/include/pangomm-1.4/pangomm/private/attributes_p.h
   /usr/include/pangomm-1.4/pangomm/private/attriter_p.h
   /usr/include/pangomm-1.4/pangomm/private/attrlist_p.h
+  /usr/include/pangomm-1.4/pangomm/private/cairofontmap_p.h
   /usr/include/pangomm-1.4/pangomm/private/color_p.h
   /usr/include/pangomm-1.4/pangomm/private/context_p.h
   /usr/include/pangomm-1.4/pangomm/private/coverage_p.h
@@ -509,7 +557,6 @@ Files included in the devel package:
   /usr/lib/gtkmm-2.4/include/gtkmmconfig.h
   /usr/lib/gtkmm-2.4/proc/m4/convert.m4
   /usr/lib/gtkmm-2.4/proc/m4/convert_atk.m4
-  /usr/lib/gtkmm-2.4/proc/m4/convert_base.m4
   /usr/lib/gtkmm-2.4/proc/m4/convert_gdk.m4
   /usr/lib/gtkmm-2.4/proc/m4/convert_gtk.m4
   /usr/lib/gtkmm-2.4/proc/m4/convert_gtkmm.m4
@@ -527,8 +574,7 @@ Files included in the devel package:
   /usr/lib/pkgconfig/gtkmm-2.4.pc
   /usr/lib/pkgconfig/pangomm-1.4.pc
 
-Files included in the doc package: 
-
+(gtkmm24-doc)
   /usr/share/devhelp/books/gtkmm-2.4/gtkmm-2.4.devhelp
   /usr/share/doc/gtkmm-2.4/docs/FAQ/html/index.html
   /usr/share/doc/gtkmm-2.4/docs/images/gtkmm_logo.gif
@@ -545,6 +591,7 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/annotated.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/arrow_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/aspectframe_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/assistant_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/atk_2atkmm_2action_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/atk_2atkmm_2image_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/atk_2atkmm_2init_8h.html
@@ -559,14 +606,17 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/box_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/button_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/buttonbox_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/cairofontmap_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/calendar_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/celleditable_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/celllayout_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/cellrenderer_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/cellrenderer__generation_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/cellrendereraccel_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/cellrenderercombo_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/cellrendererpixbuf_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/cellrendererprogress_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/cellrendererspin_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/cellrenderertext_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/cellrenderertoggle_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/cellview_8h.html
@@ -732,6 +782,9 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1AspectFrame-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1AspectFrame.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1AspectFrame__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Assistant-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Assistant.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Assistant__inherit__graph.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Bin-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Bin.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Bin__inherit__graph.png
@@ -764,6 +817,9 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellLayout__inherit__graph.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRenderer-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRenderer.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererAccel-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererAccel.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererAccel__inherit__graph.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererCombo-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererCombo.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererCombo__inherit__graph.png
@@ -773,6 +829,9 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererProgress-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererProgress.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererProgress__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererSpin-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererSpin.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererSpin__inherit__graph.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererText-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererText.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1CellRendererText__inherit__graph.png
@@ -964,9 +1023,18 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Layout-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Layout.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Layout__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1LinkButton-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1LinkButton.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1LinkButton__inherit__graph.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1ListStore-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1ListStore.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1ListStore__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1ListViewText-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1ListViewText.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1ListViewText_1_1TextModelColumns-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1ListViewText_1_1TextModelColumns.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1ListViewText_1_1TextModelColumns__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1ListViewText__inherit__graph.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Main-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Main.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Main__inherit__graph.png
@@ -1038,12 +1106,48 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1OptionMenu-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1OptionMenu.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1OptionMenu__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PageSetup-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PageSetup.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PageSetupUnixDialog-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PageSetupUnixDialog.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PageSetupUnixDialog__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PageSetup__inherit__graph.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Paned-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Paned.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Paned__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PaperSize-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PaperSize.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Plug-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Plug.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Plug__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintContext-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintContext.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintContext__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintError-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintError.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintError__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintJob-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintJob.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintJob__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintOperation-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintOperation.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintOperationPreview-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintOperationPreview.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintOperationPreview__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintOperation__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintSettings-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintSettings.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintSettings_1_1Keys-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintSettings_1_1Keys.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintSettings_1_1PageRange-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintSettings_1_1PageRange.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintSettings__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintUnixDialog-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintUnixDialog.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1PrintUnixDialog__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Printer-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Printer.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Printer__inherit__graph.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1ProgressBar-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1ProgressBar.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1ProgressBar__inherit__graph.png
@@ -1069,6 +1173,36 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RcStyle-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RcStyle.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RcStyle__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooser-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooser.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooserDialog-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooserDialog.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooserDialog__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooserError-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooserError.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooserError__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooserMenu-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooserMenu.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooserMenu__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooserWidget-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooserWidget.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooserWidget__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentChooser__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentFilter-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentFilter.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentFilter_1_1Info-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentFilter_1_1Info.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentFilter__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentInfo-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentInfo.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentManager-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentManager.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentManagerError-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentManagerError.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentManagerError__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentManager_1_1Data-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentManager_1_1Data.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1RecentManager__inherit__graph.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Ruler-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Ruler.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Ruler__inherit__graph.png
@@ -1104,6 +1238,9 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1SpinButton-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1SpinButton.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1SpinButton__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1StatusIcon-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1StatusIcon.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1StatusIcon__inherit__graph.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Statusbar-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Statusbar.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classGtk_1_1Statusbar__inherit__graph.png
@@ -1296,6 +1433,9 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1Attribute-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1Attribute.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1Attribute__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1CairoFontMap-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1CairoFontMap.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1CairoFontMap__inherit__graph.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1Color-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1Color.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1Context-members.html
@@ -1341,6 +1481,8 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1LayoutRun-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1LayoutRun.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1Layout__inherit__graph.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1Matrix-members.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1Matrix.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1Rectangle-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1Rectangle.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/classPango_1_1Renderer-members.html
@@ -1371,22 +1513,22 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/deprecated.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/device_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/dialog_8h.html
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000000.html
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000000_dep.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000001.html
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000001_dep.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000002.html
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000002_dep.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000003.html
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000003_dep.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000004.html
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000004_dep.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000005.html
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000005_dep.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000006.html
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000006_dep.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000007.html
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_000007_dep.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_4cbb9f4753486777f7bf3af05af5e12f.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_4cbb9f4753486777f7bf3af05af5e12f_dep.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_551013450f1be15c8934c415b23041f1.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_551013450f1be15c8934c415b23041f1_dep.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_8d46e628d31836e5a195010fa2a14478.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_8d46e628d31836e5a195010fa2a14478_dep.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_a657ad37a284806ac4419be5fc41da90.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_a657ad37a284806ac4419be5fc41da90_dep.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_b1eda8b8304b6d162847f2c608d53d00.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_b1eda8b8304b6d162847f2c608d53d00_dep.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_b5787654403e3adbe4c4a4a072539b83.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_b5787654403e3adbe4c4a4a072539b83_dep.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_b93e7929bfd0762c3d1c91dc96a9d64b.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_b93e7929bfd0762c3d1c91dc96a9d64b_dep.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_e33cb97c7410236f351a03f2830bedc4.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/dir_e33cb97c7410236f351a03f2830bedc4_dep.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/dirs.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/display_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/displaymanager_8h.html
@@ -1551,6 +1693,8 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/group__Dialogs.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/group__Menus.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/group__Menus.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/group__Printing.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/group__RecentFiles.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/group__TextView.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/group__TextView.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/group__TreeView.html
@@ -1611,6 +1755,10 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/inherit__graph__122.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/inherit__graph__123.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/inherit__graph__124.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/inherit__graph__125.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/inherit__graph__126.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/inherit__graph__127.png
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/inherit__graph__128.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/inherit__graph__13.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/inherit__graph__14.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/inherit__graph__15.png
@@ -1714,9 +1862,12 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/layoutiter_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/layoutline_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/layoutrun_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/linkbutton_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/list_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/liststore_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/listviewtext_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/main_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/matrix_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/menu_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/menu__elems_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/menubar_8h.html
@@ -1728,6 +1879,7 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/modules.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/namespaceAtk.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/namespaceGdk.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/namespaceGdk_1_1Cairo.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/namespaceGtk.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/namespaceGtk_1_1AccelMap.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/namespaceGtk_1_1Box__Helpers.html
@@ -1794,6 +1946,7 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/namespaces.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/namespacesigc.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/namespacestd.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/newin2p10s.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/newin2p2s.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/newin2p4s.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/newin2p6s.html
@@ -1803,6 +1956,8 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/objectaccessible_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/optionmenu_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/pages.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/pagesetup_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/pagesetupunixdialog_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/paned_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/pango_2pangomm_2color_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/pango_2pangomm_2init_8h.html
@@ -1810,6 +1965,7 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/pango_2pangomm_2layout_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/pango_2pangomm_2rectangle_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/pango_2pangomm_2types_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/papersize_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/pixbuf_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/pixbufanimation_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/pixbufanimationiter_8h.html
@@ -1817,6 +1973,13 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/pixbufloader_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/pixmap_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/plug_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/printcontext_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/printer_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/printjob_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/printoperation_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/printoperationpreview_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/printsettings_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/printunixdialog_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/progressbar_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/radioaction_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/radiobutton_8h.html
@@ -1825,6 +1988,13 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/radiotoolbutton_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/range_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/rc_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/recentchooser_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/recentchooserdialog_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/recentchoosermenu_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/recentchooserwidget_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/recentfilter_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/recentinfo_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/recentmanager_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/region_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/relation_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/relationset_8h.html
@@ -1848,103 +2018,13 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/spinbutton_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/stateset_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/statusbar_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/statusicon_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_8h.html
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_about_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_add_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_align_center_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_align_justify_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_align_left_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_align_right_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_apply_20.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_bottom_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_broken_image_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_cancel_20.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_cdrom_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_clear_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_close_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_colorselector_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_connect_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_convert_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_copy_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_cut_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_dialog_authentication_48.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_dialog_error_48.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_dialog_info_48.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_dialog_question_48.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_dialog_warning_48.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_directory_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_disconnect_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_dnd_32.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_dnd_multiple_32.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_down_arrow_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_edit_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_exec_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_exit_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_file_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_first_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_font_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_fullscreen_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_harddisk_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_help_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_home_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_index_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_info_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_jump_to_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_last_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_leave_fullscreen_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_left_arrow_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_media_forward_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_media_next_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_media_pause_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_media_play_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_media_previous_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_media_record_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_media_rewind_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_media_stop_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_network_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_new_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_no_20.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_ok_20.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_open_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_paste_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_preferences_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_print_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_print_preview_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_properties_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_redo_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_refresh_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_remove_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_revert_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_right_arrow_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_save_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_save_as_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_search_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_search_replace_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_sort_ascending_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_sort_descending_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_spellcheck_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_stop_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_text_bold_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_text_italic_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_text_strikethrough_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_text_underline_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_top_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_trash_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_undelete_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_undo_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_up_arrow_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_yes_20.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_zoom_1_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_zoom_fit_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_zoom_in_24.png
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/stock_zoom_out_24.png
   /usr/share/doc/gtkmm-2.4/docs/reference/html/stockid_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/stockitem_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/streamablecontent_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/structAtk_1_1AttributeTraits-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/structAtk_1_1AttributeTraits.html
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/structGdk_1_1AtomStringTraits-members.html
-  /usr/share/doc/gtkmm-2.4/docs/reference/html/structGdk_1_1AtomStringTraits.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/structGtk_1_1Box__Helpers_1_1EndElem-members.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/structGtk_1_1Box__Helpers_1_1EndElem.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/structGtk_1_1Box__Helpers_1_1EndElem__inherit__graph.png
@@ -1964,6 +2044,7 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/reference/html/structPango_1_1LayoutLineTraits.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/style_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/tabarray_8h.html
+  /usr/share/doc/gtkmm-2.4/docs/reference/html/tabs.css
   /usr/share/doc/gtkmm-2.4/docs/reference/html/targetentry_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/targetlist_8h.html
   /usr/share/doc/gtkmm-2.4/docs/reference/html/tearoffmenuitem_8h.html
@@ -2012,45 +2093,64 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/box_packing3.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/buttonbox.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/buttons.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/cairo_clock.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/cairo_joins.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/checkbutton.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/clipboard_ideal.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/clipboard_simple.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/combo.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/combobox_complex.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/combobox_text.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/comboboxentry_complex.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/comboboxentry_text.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/custom_container.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/devcpp_project_options.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/dialogs_about.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/dialogs_colorselectiondialog.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/dialogs_filechooser.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/dialogs_fontselectiondialog.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/dialogs_messagedialog.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/dialogs_simple.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/drag_and_drop.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/drawingarea_arcs.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/drawingarea_curve.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/drawingarea_lines.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/drawingarea_text.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/entry.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/eventbox.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/expander.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/filechooserbutton.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/frame.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/helloworld.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/helloworld2.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/idle.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/label.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/main_menu.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/menu_popup.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/menus_and_toolbars.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/menus_menu.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/menus_menubar.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/notebook.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/paned.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/printing.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/progressbar.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/radiobuttons.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/range_widgets.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/recentchooserdialog.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/scrolledwindow.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/socket-fail.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/socket.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/spinbutton.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/table.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/textview.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/toolbar.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/treeview_combo_renderer.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/treeview_draganddrop.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/treeview_editablecells.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/treeview_list.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/treeview_popup.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/treeview_tree.png
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/figures/update_ui.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/apa.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/apas02.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/apas03.html
@@ -2067,6 +2167,16 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ape.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/apes02.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/apes03.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/apf.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/apg.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/apgs02.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/aph.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/aphs02.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/aphs03.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/aphs04.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/aphs05.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/aphs06.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/aphs07.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch01.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch01s02.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch02.html
@@ -2091,7 +2201,6 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch06s03.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch06s04.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch06s05.html
-  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch06s06.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch07.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch07s02.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch08.html
@@ -2101,55 +2210,71 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch08s05.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch08s06.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch08s07.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch08s08.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch09.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch09s02.html
-  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch09s03.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch10.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch10s02.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch10s03.html
-  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch10s04.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch11.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch11s02.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch11s03.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch11s04.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch12.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch12s02.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch12s03.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch13.html
-  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch13s02.html
-  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch13s03.html
-  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch13s04.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch14.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch14s02.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch14s03.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch14s04.html
-  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch14s05.html
-  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch14s06.html
-  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch14s07.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch15.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch15s02.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch15s03.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch15s04.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch15s05.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch15s06.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch15s07.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch16.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch16s02.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch16s03.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch16s04.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch16s05.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch17.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch17s02.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch17s03.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch17s04.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch18.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch18s02.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch18s03.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch18s04.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch18s05.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch18s06.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch18s07.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch18s08.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch19.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch19s02.html
-  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch19s03.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch20.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch20s02.html
-  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch20s03.html
-  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch20s04.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch21.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch21s02.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch21s03.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch22.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch22s02.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch23.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch23s02.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch23s03.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch24.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch24s02.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch24s03.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch24s04.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch25.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch25s02.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch26.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch26s02.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/ch27.html
   /usr/share/doc/gtkmm-2.4/docs/tutorial/html/index.html
+  /usr/share/doc/gtkmm-2.4/docs/tutorial/html/style.css
   /usr/share/doc/gtkmm-2.4/docs/tutorial/icons/caution.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/icons/home.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/icons/important.png
@@ -2159,15 +2284,13 @@ Files included in the doc package:
   /usr/share/doc/gtkmm-2.4/docs/tutorial/icons/tip.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/icons/up.png
   /usr/share/doc/gtkmm-2.4/docs/tutorial/icons/warning.png
-  /usr/share/doc/gtkmm-2.4/tests/child_widget/main.cc
-  /usr/share/doc/gtkmm-2.4/tests/child_widget/testwindow.cc
-  /usr/share/doc/gtkmm-2.4/tests/child_widget/testwindow.h
-  /usr/share/doc/gtkmm-2.4/tests/child_widget_managed/main.cc
-  /usr/share/doc/gtkmm-2.4/tests/main_with_options/main.cc
 
 --------------------
 
 Port Notes:
+
+----- version 2.10.2-1 -----
+Version bump for GNOME 2.16.
 
 ----- version 2.8.8-1 -----
 Version bump.

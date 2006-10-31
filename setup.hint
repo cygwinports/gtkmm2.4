@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin atk glibmm24 gtk2-x11 libsigc++20 pango
+requires: cygwin atk cairomm10 glibmm24 gtk2-x11 libsigc++20 pango
 sdesc: "C++ bindings for gtk+-2.4 (runtime)"
 ldesc: "gtkmm is the official C++ interface for the popular GUI library 
 GTK+. It closely follows GTK+ development. Highlights include typesafe 
