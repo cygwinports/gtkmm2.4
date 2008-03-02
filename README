@@ -8,20 +8,19 @@ Runtime requirements:
   cygwin-1.5.25-7
   atk-1.20.0-1
   cairomm10-1.4.2-1
-  gdk-pixbuf2-2.12.5-1
-  glib2-2.14.5-1
+  gdk-pixbuf2-2.12.7-1
+  glib2-2.14.6-1
   glibmm24-2.14.2-1
-  gtk2-x11-2.12.5-1
+  gtk2-x11-2.12.7-1
   libsigc++20-2.1.1-1
   pango-1.18.4-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.25-7
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.7-1
+  cygport-0.3.8-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
@@ -40,17 +39,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtkmm24-2.12.4-X-src.tar.bz2
+  unpack gtkmm24-2.12.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtkmm24-2.12.4-X.cygport all
+  cygport ./gtkmm24-2.12.5-X.cygport all
 
 This will create:
-  /usr/src/gtkmm24-2.12.4-X-src.tar.bz2
-  /usr/src/gtkmm24-2.12.4-X.tar.bz2
-  /usr/src/gtkmm24-devel-2.12.4-X.tar.bz2
-  /usr/src/gtkmm24-doc-2.12.4-X.tar.bz2
+  /usr/src/gtkmm24-2.12.5-X-src.tar.bz2
+  /usr/src/gtkmm24-2.12.5-X.tar.bz2
+  /usr/src/gtkmm24-devel-2.12.5-X.tar.bz2
+  /usr/src/gtkmm24-doc-2.12.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -61,14 +60,14 @@ Files included in the binary packages:
   /usr/bin/cyggdkmm-2.4-1.dll
   /usr/bin/cyggtkmm-2.4-1.dll
   /usr/bin/cygpangomm-1.4-1.dll
-  /usr/share/doc/Cygwin/gtkmm24-2.12.4.README
-  /usr/share/doc/gtkmm24-2.12.4/AUTHORS
-  /usr/share/doc/gtkmm24-2.12.4/COPYING
-  /usr/share/doc/gtkmm24-2.12.4/ChangeLog
-  /usr/share/doc/gtkmm24-2.12.4/Changes
-  /usr/share/doc/gtkmm24-2.12.4/INSTALL
-  /usr/share/doc/gtkmm24-2.12.4/NEWS
-  /usr/share/doc/gtkmm24-2.12.4/README
+  /usr/share/doc/Cygwin/gtkmm24-2.12.5.README
+  /usr/share/doc/gtkmm24-2.12.5/AUTHORS
+  /usr/share/doc/gtkmm24-2.12.5/COPYING
+  /usr/share/doc/gtkmm24-2.12.5/ChangeLog
+  /usr/share/doc/gtkmm24-2.12.5/Changes
+  /usr/share/doc/gtkmm24-2.12.5/INSTALL
+  /usr/share/doc/gtkmm24-2.12.5/NEWS
+  /usr/share/doc/gtkmm24-2.12.5/README
 
 (gtkmm24-devel)
   /usr/include/atkmm-1.6/atkmm.h
@@ -596,6 +595,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 2.12.5-1 -----
+Version bump.
 
 ----- version 2.12.4-1 -----
 Version bump.
