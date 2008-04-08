@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin atk-devel cairomm10-devel glib2-devel glibmm24-devel gdk-pixbuf2-devel gtk2-x11-devel libsigc++20-devel pango-devel
+requires: cygwin gtkmm24 atk-devel cairomm10-devel glib2-devel glibmm24-devel gdk-pixbuf2-devel gtk2-x11-devel libsigc++20-devel pango-devel
 external-source: gtkmm24
 sdesc: "C++ bindings for gtk+-2.4 (development)"
 ldesc: "gtkmm is the official C++ interface for the popular GUI library 
