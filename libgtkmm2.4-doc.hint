@@ -1,6 +1,6 @@
-category: Gnome
-requires: cygwin atk cairomm10 glib2 glibmm24 gdk-pixbuf2 gtk2-x11 libsigc++20 pango
-sdesc: "C++ bindings for gtk+-2.4 (runtime)"
+category: Doc Gnome
+external-source: gtkmm2.4
+sdesc: "C++ bindings for gtk+-2.x (API documentation)"
 ldesc: "gtkmm is the official C++ interface for the popular GUI library 
 GTK+. It closely follows GTK+ development. Highlights include typesafe 
 callbacks, widgets extensible via inheritance and a comprehensive set 

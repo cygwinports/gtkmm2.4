@@ -1,33 +1,34 @@
-gtkmm24
+gtkmm2.4
 ------------------------------------------
 gtkmm is the official C++ interface for the popular GUI library GTK+. It
 closely follows GTK+ development. Highlights include typesafe callbacks,
 widgets extensible via inheritance and a comprehensive set of widgets.
 
 Runtime requirements:
-  cygwin-1.5.25-7
-  atk-1.20.0-1
-  cairomm10-1.4.2-1
-  gdk-pixbuf2-2.12.7-1
-  glib2-2.14.6-1
-  glibmm24-2.14.2-1
-  gtk2-x11-2.12.7-1
-  libsigc++20-2.1.1-1
-  pango-1.18.4-1
+  cygwin-1.5.25-15
+  libatk1.0_0-1.24.0-1
+  libcairomm1.0_1-1.6.4-1
+  libgdk_pixbuf2.0_0-2.14.5-1
+  libglib2.0_0-2.18.3-1
+  libglibmm2.4_1-2.18.1-1
+  libgtk2.0_0-2.14.5-1
+  libpango1.0_0-1.22.3-1
+  libpangomm1.4_1-2.14.1-1
+  libsigc2.0_0-2.2.3-1
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.8-1
+  autoconf2.5-2.63-1
+  automake1.9-1.9.6-3
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.6a-1
   make-3.81-1
-  perl-5.8.8-4
-  pkg-config-0.21-1
+  perl-5.10.0-5
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical homepage:
@@ -39,37 +40,39 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtkmm24-2.12.7-X-src.tar.bz2
+  unpack gtkmm2.4-2.14.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtkmm24-2.12.7-X.cygport all
+  cygport ./gtkmm2.4-2.14.3-X.cygport all
 
 This will create:
-  /usr/src/gtkmm24-2.12.7-X-src.tar.bz2
-  /usr/src/gtkmm24-2.12.7-X.tar.bz2
-  /usr/src/gtkmm24-devel-2.12.7-X.tar.bz2
-  /usr/src/gtkmm24-doc-2.12.7-X.tar.bz2
+  /usr/src/gtkmm2.4-2.14.3-X-src.tar.bz2
+  /usr/src/libatkmm1.6_1-2.14.3-X.tar.bz2
+  /usr/src/libatkmm1.6-devel-2.14.3-X.tar.bz2
+  /usr/src/libgtkmm2.4_1-2.14.3-X.tar.bz2
+  /usr/src/libgtkmm2.4-devel-2.14.3-X.tar.bz2
+  /usr/src/libgtkmm2.4-doc-2.14.3-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
-(gtkmm24)
+(libatkmm1.6_1)
   /usr/bin/cygatkmm-1.6-1.dll
+
+(libgtkmm2.4_1)
   /usr/bin/cyggdkmm-2.4-1.dll
   /usr/bin/cyggtkmm-2.4-1.dll
-  /usr/bin/cygpangomm-1.4-1.dll
-  /usr/share/doc/Cygwin/gtkmm24-2.12.7.README
-  /usr/share/doc/gtkmm24-2.12.7/AUTHORS
-  /usr/share/doc/gtkmm24-2.12.7/COPYING
-  /usr/share/doc/gtkmm24-2.12.7/ChangeLog
-  /usr/share/doc/gtkmm24-2.12.7/Changes
-  /usr/share/doc/gtkmm24-2.12.7/INSTALL
-  /usr/share/doc/gtkmm24-2.12.7/NEWS
-  /usr/share/doc/gtkmm24-2.12.7/README
+  /usr/share/doc/gtkmm2.4-2.14.3/AUTHORS
+  /usr/share/doc/gtkmm2.4-2.14.3/COPYING
+  /usr/share/doc/gtkmm2.4-2.14.3/ChangeLog
+  /usr/share/doc/gtkmm2.4-2.14.3/Changes
+  /usr/share/doc/gtkmm2.4-2.14.3/INSTALL
+  /usr/share/doc/gtkmm2.4-2.14.3/NEWS
+  /usr/share/doc/gtkmm2.4-2.14.3/README
 
-(gtkmm24-devel)
+(libatkmm1.6-devel)
   /usr/include/atkmm-1.6/atkmm.h
   /usr/include/atkmm-1.6/atkmm/action.h
   /usr/include/atkmm-1.6/atkmm/component.h
@@ -111,6 +114,11 @@ Files included in the binary packages:
   /usr/include/atkmm-1.6/atkmm/text.h
   /usr/include/atkmm-1.6/atkmm/value.h
   /usr/include/atkmm-1.6/atkmm/wrap_init.h
+  /usr/lib/libatkmm-1.6.dll.a
+  /usr/lib/libatkmm-1.6.la
+  /usr/lib/pkgconfig/atkmm-1.6.pc
+
+(libgtkmm2.4-devel)
   /usr/include/gdkmm-2.4/gdkmm.h
   /usr/include/gdkmm-2.4/gdkmm/bitmap.h
   /usr/include/gdkmm-2.4/gdkmm/color.h
@@ -412,6 +420,7 @@ Files included in the binary packages:
   /usr/include/gtkmm-2.4/gtkmm/private/toolbar_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/toolbutton_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/toolitem_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/toolshell_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/tooltip_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/tooltips_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/treedragdest_p.h
@@ -486,6 +495,7 @@ Files included in the binary packages:
   /usr/include/gtkmm-2.4/gtkmm/toolbar.h
   /usr/include/gtkmm-2.4/gtkmm/toolbutton.h
   /usr/include/gtkmm-2.4/gtkmm/toolitem.h
+  /usr/include/gtkmm-2.4/gtkmm/toolshell.h
   /usr/include/gtkmm-2.4/gtkmm/tooltip.h
   /usr/include/gtkmm-2.4/gtkmm/tooltips.h
   /usr/include/gtkmm-2.4/gtkmm/treedragdest.h
@@ -509,60 +519,6 @@ Files included in the binary packages:
   /usr/include/gtkmm-2.4/gtkmm/widget.h
   /usr/include/gtkmm-2.4/gtkmm/window.h
   /usr/include/gtkmm-2.4/gtkmm/wrap_init.h
-  /usr/include/pangomm-1.4/pangomm.h
-  /usr/include/pangomm-1.4/pangomm/attributes.h
-  /usr/include/pangomm-1.4/pangomm/attriter.h
-  /usr/include/pangomm-1.4/pangomm/attrlist.h
-  /usr/include/pangomm-1.4/pangomm/cairofontmap.h
-  /usr/include/pangomm-1.4/pangomm/color.h
-  /usr/include/pangomm-1.4/pangomm/context.h
-  /usr/include/pangomm-1.4/pangomm/coverage.h
-  /usr/include/pangomm-1.4/pangomm/font.h
-  /usr/include/pangomm-1.4/pangomm/fontdescription.h
-  /usr/include/pangomm-1.4/pangomm/fontface.h
-  /usr/include/pangomm-1.4/pangomm/fontfamily.h
-  /usr/include/pangomm-1.4/pangomm/fontmap.h
-  /usr/include/pangomm-1.4/pangomm/fontmetrics.h
-  /usr/include/pangomm-1.4/pangomm/fontset.h
-  /usr/include/pangomm-1.4/pangomm/glyph.h
-  /usr/include/pangomm-1.4/pangomm/glyphstring.h
-  /usr/include/pangomm-1.4/pangomm/init.h
-  /usr/include/pangomm-1.4/pangomm/item.h
-  /usr/include/pangomm-1.4/pangomm/language.h
-  /usr/include/pangomm-1.4/pangomm/layout.h
-  /usr/include/pangomm-1.4/pangomm/layoutiter.h
-  /usr/include/pangomm-1.4/pangomm/layoutline.h
-  /usr/include/pangomm-1.4/pangomm/layoutrun.h
-  /usr/include/pangomm-1.4/pangomm/private/attributes_p.h
-  /usr/include/pangomm-1.4/pangomm/private/attriter_p.h
-  /usr/include/pangomm-1.4/pangomm/private/attrlist_p.h
-  /usr/include/pangomm-1.4/pangomm/private/cairofontmap_p.h
-  /usr/include/pangomm-1.4/pangomm/private/color_p.h
-  /usr/include/pangomm-1.4/pangomm/private/context_p.h
-  /usr/include/pangomm-1.4/pangomm/private/coverage_p.h
-  /usr/include/pangomm-1.4/pangomm/private/font_p.h
-  /usr/include/pangomm-1.4/pangomm/private/fontdescription_p.h
-  /usr/include/pangomm-1.4/pangomm/private/fontface_p.h
-  /usr/include/pangomm-1.4/pangomm/private/fontfamily_p.h
-  /usr/include/pangomm-1.4/pangomm/private/fontmap_p.h
-  /usr/include/pangomm-1.4/pangomm/private/fontmetrics_p.h
-  /usr/include/pangomm-1.4/pangomm/private/fontset_p.h
-  /usr/include/pangomm-1.4/pangomm/private/glyph_p.h
-  /usr/include/pangomm-1.4/pangomm/private/glyphstring_p.h
-  /usr/include/pangomm-1.4/pangomm/private/item_p.h
-  /usr/include/pangomm-1.4/pangomm/private/language_p.h
-  /usr/include/pangomm-1.4/pangomm/private/layout_p.h
-  /usr/include/pangomm-1.4/pangomm/private/layoutiter_p.h
-  /usr/include/pangomm-1.4/pangomm/private/layoutline_p.h
-  /usr/include/pangomm-1.4/pangomm/private/layoutrun_p.h
-  /usr/include/pangomm-1.4/pangomm/private/rectangle_p.h
-  /usr/include/pangomm-1.4/pangomm/private/renderer_p.h
-  /usr/include/pangomm-1.4/pangomm/private/tabarray_p.h
-  /usr/include/pangomm-1.4/pangomm/rectangle.h
-  /usr/include/pangomm-1.4/pangomm/renderer.h
-  /usr/include/pangomm-1.4/pangomm/tabarray.h
-  /usr/include/pangomm-1.4/pangomm/types.h
-  /usr/include/pangomm-1.4/pangomm/wrap_init.h
   /usr/lib/gdkmm-2.4/include/gdkmmconfig.h
   /usr/lib/gtkmm-2.4/include/gtkmmconfig.h
   /usr/lib/gtkmm-2.4/proc/m4/convert.m4
@@ -571,20 +527,14 @@ Files included in the binary packages:
   /usr/lib/gtkmm-2.4/proc/m4/convert_gtk.m4
   /usr/lib/gtkmm-2.4/proc/m4/convert_gtkmm.m4
   /usr/lib/gtkmm-2.4/proc/m4/convert_pango.m4
-  /usr/lib/libatkmm-1.6.dll.a
-  /usr/lib/libatkmm-1.6.la
   /usr/lib/libgdkmm-2.4.dll.a
   /usr/lib/libgdkmm-2.4.la
   /usr/lib/libgtkmm-2.4.dll.a
   /usr/lib/libgtkmm-2.4.la
-  /usr/lib/libpangomm-1.4.dll.a
-  /usr/lib/libpangomm-1.4.la
-  /usr/lib/pkgconfig/atkmm-1.6.pc
   /usr/lib/pkgconfig/gdkmm-2.4.pc
   /usr/lib/pkgconfig/gtkmm-2.4.pc
-  /usr/lib/pkgconfig/pangomm-1.4.pc
 
-(gtkmm24-doc)
+(libgtkmm2.4-doc)
   /usr/share/devhelp/books/gtkmm-2.4/gtkmm-2.4.devhelp
   /usr/share/doc/gtkmm-2.4/docs/FAQ/html/index.html
   /usr/share/doc/gtkmm-2.4/docs/images/*
@@ -595,6 +545,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 2.14.3-1 -----
+Version bump.  Separated libatkmm-1.6 and libpangomm-1.4.
 
 ----- version 2.12.7-1 -----
 Version bump.
