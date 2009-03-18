@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libatkmm1.6_1 libatk1.0-devel libglib2.0-devel libglibmm2.4-devel libsigc2.0-devel
+requires: cygwin libatkmm1.6_1 libatk1.0-devel libglib2.0-devel libglibmm2.4-devel libsigc2.0-devel libstdc++6-devel
 external-source: gtkmm2.4
 sdesc: "C++ bindings for atk-1.x (development)"
 ldesc: "gtkmm is the official C++ interface for the popular GUI library 

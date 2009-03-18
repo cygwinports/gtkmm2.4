@@ -5,28 +5,30 @@ closely follows GTK+ development. Highlights include typesafe callbacks,
 widgets extensible via inheritance and a comprehensive set of widgets.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libatk1.0_0-1.24.0-1
-  libcairomm1.0_1-1.6.4-1
-  libgdk_pixbuf2.0_0-2.14.5-1
-  libglib2.0_0-2.18.3-1
-  libglibmm2.4_1-2.18.1-1
-  libgtk2.0_0-2.14.5-1
-  libpango1.0_0-1.22.3-1
-  libpangomm1.4_1-2.14.1-1
-  libsigc2.0_0-2.2.3-1
+  cygwin-1.7.0-43
+  libatk1.0_0-1.26.0-1
+  libcairomm1.0_1-1.8.0-1
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.0-1
+  libglib2.0_0-2.20.0-1
+  libglibmm2.4_1-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libpango1.0_0-1.24.0-1
+  libpangomm1.4_1-2.24.0-1
+  libsigc2.0_0-2.2.3-10
+  libstdc++6-4.3.2-2
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  libtool-2.2.7a-1
+  make-3.81-2
   perl-5.10.0-5
   pkg-config-0.23a-2
   sed-4.1.5-2
@@ -40,19 +42,19 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtkmm2.4-2.14.3-X-src.tar.bz2
+  unpack gtkmm2.4-2.16.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtkmm2.4-2.14.3-X.cygport all
+  cygport ./gtkmm2.4-2.16.0-X.cygport all
 
 This will create:
-  /usr/src/gtkmm2.4-2.14.3-X-src.tar.bz2
-  /usr/src/libatkmm1.6_1-2.14.3-X.tar.bz2
-  /usr/src/libatkmm1.6-devel-2.14.3-X.tar.bz2
-  /usr/src/libgtkmm2.4_1-2.14.3-X.tar.bz2
-  /usr/src/libgtkmm2.4-devel-2.14.3-X.tar.bz2
-  /usr/src/libgtkmm2.4-doc-2.14.3-X.tar.bz2
+  /usr/src/gtkmm2.4-2.16.0-X-src.tar.bz2
+  /usr/src/libatkmm1.6_1-2.16.0-X.tar.bz2
+  /usr/src/libatkmm1.6-devel-2.16.0-X.tar.bz2
+  /usr/src/libgtkmm2.4_1-2.16.0-X.tar.bz2
+  /usr/src/libgtkmm2.4-devel-2.16.0-X.tar.bz2
+  /usr/src/libgtkmm2.4-doc-2.16.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -64,13 +66,12 @@ Files included in the binary packages:
 (libgtkmm2.4_1)
   /usr/bin/cyggdkmm-2.4-1.dll
   /usr/bin/cyggtkmm-2.4-1.dll
-  /usr/share/doc/gtkmm2.4-2.14.3/AUTHORS
-  /usr/share/doc/gtkmm2.4-2.14.3/COPYING
-  /usr/share/doc/gtkmm2.4-2.14.3/ChangeLog
-  /usr/share/doc/gtkmm2.4-2.14.3/Changes
-  /usr/share/doc/gtkmm2.4-2.14.3/INSTALL
-  /usr/share/doc/gtkmm2.4-2.14.3/NEWS
-  /usr/share/doc/gtkmm2.4-2.14.3/README
+  /usr/share/doc/gtkmm2.4/AUTHORS
+  /usr/share/doc/gtkmm2.4/COPYING
+  /usr/share/doc/gtkmm2.4/ChangeLog
+  /usr/share/doc/gtkmm2.4/Changes
+  /usr/share/doc/gtkmm2.4/NEWS
+  /usr/share/doc/gtkmm2.4/README
 
 (libatkmm1.6-devel)
   /usr/include/atkmm-1.6/atkmm.h
@@ -182,6 +183,7 @@ Files included in the binary packages:
   /usr/include/gtkmm-2.4/gtkmm/accelmap.h
   /usr/include/gtkmm-2.4/gtkmm/action.h
   /usr/include/gtkmm-2.4/gtkmm/actiongroup.h
+  /usr/include/gtkmm-2.4/gtkmm/activatable.h
   /usr/include/gtkmm-2.4/gtkmm/adjustment.h
   /usr/include/gtkmm-2.4/gtkmm/alignment.h
   /usr/include/gtkmm-2.4/gtkmm/arrow.h
@@ -265,6 +267,7 @@ Files included in the binary packages:
   /usr/include/gtkmm-2.4/gtkmm/notebook.h
   /usr/include/gtkmm-2.4/gtkmm/object.h
   /usr/include/gtkmm-2.4/gtkmm/optionmenu.h
+  /usr/include/gtkmm-2.4/gtkmm/orientable.h
   /usr/include/gtkmm-2.4/gtkmm/pagesetup.h
   /usr/include/gtkmm-2.4/gtkmm/pagesetupunixdialog.h
   /usr/include/gtkmm-2.4/gtkmm/paned.h
@@ -282,6 +285,7 @@ Files included in the binary packages:
   /usr/include/gtkmm-2.4/gtkmm/private/accellabel_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/action_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/actiongroup_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/activatable_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/adjustment_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/alignment_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/arrow_p.h
@@ -359,6 +363,7 @@ Files included in the binary packages:
   /usr/include/gtkmm-2.4/gtkmm/private/notebook_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/object_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/optionmenu_p.h
+  /usr/include/gtkmm-2.4/gtkmm/private/orientable_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/pagesetup_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/pagesetupunixdialog_p.h
   /usr/include/gtkmm-2.4/gtkmm/private/paned_p.h
@@ -546,70 +551,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.14.3-1 -----
-Version bump.  Separated libatkmm-1.6 and libpangomm-1.4.
-
------ version 2.12.7-1 -----
-Version bump.
-
------ version 2.12.4-1 -----
-Version bump.
-
------ version 2.12.3-1 -----
-Version bump for GNOME 2.20.
-
------ version 2.10.11-1 -----
-Version bump.
-
------ version 2.10.10-1 -----
-Version bump.
-
------ version 2.10.9-1 -----
-Version bump.
-
------ version 2.10.8-1 -----
-Version bump.
-
------ version 2.10.7-1 -----
-Version bump.
-
------ version 2.10.6-1 -----
-Version bump.
-
------ version 2.10.3-1 -----
-Version bump.
-
------ version 2.10.2-1 -----
-Version bump for GNOME 2.16.
-
------ version 2.8.8-1 -----
-Version bump.
-
------ version 2.8.5-1 -----
-Version bump, requires glibmm-2.8.6.
-
------ version 2.8.3-1 -----
-Version bump for gtk+-2.8.
-Source package is now cygport driven.
-
------ version 2.6.5-1 -----
-Version bump.
-
------ version 2.6.4-1 -----
-Version bump for gtk+-2.6.
-
------ version 2.4.11-1 -----
-Version bump.
-
------ version 2.4.7-1 -----
-Upstream bugfix release.
-
------ version 2.4.6-1 -----
-Upstream bugfix release; see ChangeLog and NEWS for details.
-API documentation now installed for viewing with devhelp.
-
------ version 2.4.5-1 -----
-Initial release for Cygwin.
+----- version 2.16.0-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:

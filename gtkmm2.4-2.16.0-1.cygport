@@ -1,7 +1,7 @@
 inherit gtkmm
 
 PKG_NAMES="${PN} lib${PN}_1 lib${PN}-devel lib${PN}-doc libatkmm1.6_1 libatkmm1.6-devel"
-libgtkmm2_4_1_CONTENTS="usr/bin/cygg?kmm-2.4-1.dll usr/share/doc/Cygwin/ usr/share/doc/${P}/"
+libgtkmm2_4_1_CONTENTS="usr/bin/cygg?kmm-2.4-1.dll usr/share/doc/Cygwin/ usr/share/doc/${PN}/"
 libgtkmm2_4_devel_CONTENTS="--exclude=*atkmm* usr/include/ usr/lib/"
 libgtkmm2_4_doc_CONTENTS="usr/share/devhelp/ usr/share/doc/gtkmm-2.4/"
 libatkmm1_6_1_CONTENTS="usr/bin/cygatkmm-1.6-1.dll"
