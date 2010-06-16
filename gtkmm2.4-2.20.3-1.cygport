@@ -7,5 +7,6 @@ libgtkmm2_4_doc_CONTENTS="usr/share/devhelp/ usr/share/doc/gtkmm-2.4/"
 libatkmm1_6_1_CONTENTS="usr/bin/cygatkmm-1.6-1.dll"
 libatkmm1_6_devel_CONTENTS="usr/include/atkmm-1.6/ usr/lib/libatkmm-1.6.*
                             usr/lib/pkgconfig/atkmm-1.6.pc"
+PKG_IGNORE="usr/share/gtkmm-2.4/demo/"
 
 DIFF_EXCLUDES+=" *mmconfig.h"
