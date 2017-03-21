@@ -1,7 +1,7 @@
 inherit gtkmm
 
 NAME="gtkmm2.4"
-VERSION=2.24.4
+VERSION=2.24.5
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="C++ bindings for gtk+-2.x"
